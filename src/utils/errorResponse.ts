@@ -26,7 +26,7 @@ export function createMetaErrorResponse(error: any, context: string): MetaErrorR
   const metaError = error.template || error;
   const errorUserTitle = metaError.error_user_title || metaError.message || 'Unknown error';
   const errorUserMsg = metaError.error_user_msg || metaError.message || 'Unknown error';
-  console.log('teste');
+
   return {
     status: HttpStatus.BAD_REQUEST,
     error: 'Bad Request',
